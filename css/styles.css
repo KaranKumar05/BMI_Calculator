@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
   background-color: rgb(102, 0, 255);
 }
@@ -25,7 +30,7 @@ label {
 }
 .heightInputField {
   padding: 5px;
-  width: 3rem;
+  width: 4rem;
   text-align: center;
   font-size: 1.5em;
   border-radius: 10px;
@@ -81,6 +86,38 @@ input::placeholder {
 .main_container > img {
   border-radius: 50px;
 }
+.image {
+  background-image: url(/images/bmi.jpg);
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 800px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .image {
+        background: url("/images/bmi\ 700-550.jpg")no-repeat center center;
+        /* background-repeat: no-repeat; */
+        width: 700px;
+        height: 550px;
+    }
+}
+@media (max-width: 800px) {
+    .image {
+        background: url("/images/bmi\ 500-400.jpg")no-repeat center center;
+        /* background-repeat: no-repeat; */
+        width: 500px;
+        height: 550px;
+    }
+}
+
+
 @media (max-width: 560px) {
   #result {
     width: 20em;
@@ -90,6 +127,11 @@ input::placeholder {
     padding: 10px;
     color: white;
   }
+  .image {
+    background: url("/images/bmi\ 300-230.jpg")no-repeat center center;
+    width: 300px;
+    height: 250px;
+}
 }
 @media (max-width: 420px) {
   .main_container > h1 {
