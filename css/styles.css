@@ -1,0 +1,135 @@
+body {
+  background-color: rgb(102, 0, 255);
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.main_container > h1 {
+  color: red;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+label {
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.heightInputField {
+  padding: 5px;
+  width: 3rem;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.weightInputField {
+  padding: 5px;
+  width: 5rem;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  /* box-shadow: 4px 4px 15px rgb(129, 129, 129); */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input::placeholder {
+  color: rgb(203, 203, 203);
+  font-weight: lighter;
+}
+.main_container > button {
+  background-color: #ffffff;
+  border: none;
+  color: #64efff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.main_container > button:hover {
+  padding: 15px 20px;
+  background-color: #64efff;
+  color: white;
+}
+#result {
+  width: 32em;
+  text-align: center;
+  border-radius: 10px;
+  height: 6.5em;
+  padding: 10px;
+  color: white;
+}
+.main_container > img {
+  border-radius: 50px;
+}
+@media (max-width: 560px) {
+  #result {
+    width: 20em;
+    text-align: center;
+    border-radius: 10px;
+    height: 6.5em;
+    padding: 10px;
+    color: white;
+  }
+}
+@media (max-width: 420px) {
+  .main_container > h1 {
+    color: red;
+    font-size: 1.5em;
+  }
+  label {
+    font-weight: bolder;
+    font-size: 1em;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  .heightInputField {
+    padding: 5px;
+    width: 3rem;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+
+  .weightInputField {
+    padding: 5px;
+    width: 5rem;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: blue;
+    color: white;
+    /* box-shadow: 4px 4px 15px rgb(129, 129, 129); */
+  }
+  #result {
+    width: 15em;
+    text-align: center;
+    border-radius: 10px;
+    height: 6.5em;
+    padding: 10px;
+    color: white;
+  }
+}

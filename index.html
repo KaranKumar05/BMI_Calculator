@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator || Karan Kumar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="main_container">
+      <h1>BMI Calculator</h1>
+      <form>
+        <div class="height_input">
+          <label for="heightInputFeet"> Your Height: </label>
+          <input
+            required
+            step="1"
+            class="heightInputField"
+            id="heightInputFeet"
+            type="number"
+            min="0"
+            max="10"
+            placeholder="feet"
+            size="5"
+          />
+          <input
+            required
+            step="1"
+            class="heightInputField"
+            id="heightInputInch"
+            type="number"
+            min="0"
+            max="11"
+            placeholder="inch"
+          />
+        </div>
+        <div class="weight_input">
+          <label for="weightInputKg"> Your Weight: </label>
+          <input
+            required
+            step="0.1"
+            class="weightInputField"
+            id="weightInputKg"
+            type="number"
+            placeholder="Kg"
+          />
+        </div>
+      </form>
+      <button onclick="calculateBMI(); return false">Calculate</button>
+      <div id="result">
+        <h2 id="title"></h2>
+        <p id="suggestion"></p>
+      </div>
+      <!-- <img src="./images/bmi.jpg" alt="" /> -->
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
